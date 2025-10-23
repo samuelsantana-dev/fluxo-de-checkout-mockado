@@ -10,8 +10,7 @@ export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [verifyPassword, setVerifyPassword] = useState("");
-  const [country, setCountry] = useState("");
-  const [ddd, setDdd] = useState("");
+  const [cpf, setCpf] = useState("");
   const [number, setNumber] = useState("");
   const [errors, setError] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(false);
@@ -85,21 +84,12 @@ export default function RegisterPage() {
         <p className="text-red-500 text-sm">{errors.verifyPassword}</p>
       )}
 
-      <InputText
-        label="País"
-        placeholder="Ex: 55"
-        value={country}
-        onChange={(e) => setCountry(e.target.value)}
-      />
-      {errors["phone.country"] && (
-        <p className="text-red-500 text-sm">{errors["phone.country"]}</p>
-      )}
 
       <InputText
-        label="DDD"
+        label="Cpf"
         placeholder="Ex: 11"
-        value={ddd}
-        onChange={(e) => setDdd(e.target.value)}
+        value={cpf}
+        onChange={(e) => setCpf(e.target.value)}
       />
       {errors["phone.ddd"] && (
         <p className="text-red-500 text-sm">{errors["phone.ddd"]}</p>

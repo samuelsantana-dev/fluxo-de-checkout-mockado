@@ -40,7 +40,6 @@ export default function HeroSection() {
           </div>
         </Link>
 
-        {/* Carrinho */}
         <Link href="/cart" className="block">
           <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow h-full">
             <div className="w-14 h-14 bg-green-100 dark:bg-green-900/30 rounded-lg flex items-center justify-center mb-4">
